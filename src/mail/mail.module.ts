@@ -22,7 +22,7 @@ import { ConfigService } from '@nestjs/config';
           },
         },
         defaults: {
-          from: config.get('MAIL_FROM'),          
+          from: `"Credenciales" <${config.get('MAIL_FROM')}>`,          
         },
         
         
